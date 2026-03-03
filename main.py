@@ -1,14 +1,17 @@
 from fastapi import FastAPI
+from typing import Optional
 
 app = FastAPI()
 
 
 # @app -> path operation decorator , get -> http method or Operation , "/" -> path
-@app.get("/")
-def index(): #path operation function
-    return {
-        "data": "Blog List"
-    }
+@app.get("/blog")
+def index(limit: int =10 , published: bool = True , sort: Optional[str] = None): #path operation function
+    if published:
+        return {"data": f"{limit} Published Blog List" }
+    else:
+        return {"data": f"{limit} Unpublished Blog List" }
+        
 
 
 @app.get("/blog/unpublished")
