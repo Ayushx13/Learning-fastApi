@@ -1,0 +1,83 @@
+# ----------------------------
+
+# Python
+
+# ----------------------------
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+
+venv/
+env/
+ENV/
+.venv/
+
+# Environment variables
+
+.env
+.env.*
+
+# ----------------------------
+
+# FastAPI / Uvicorn
+
+# ----------------------------
+
+*.log
+uvicorn.log
+
+# ----------------------------
+
+# Distribution / packaging
+
+# ----------------------------
+
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ----------------------------
+
+# Testing
+
+# ----------------------------
+
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# ----------------------------
+
+# IDE / Editor
+
+# ----------------------------
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ----------------------------
+
+# OS files
+
+# ----------------------------
+
+.DS_Store
+Thumbs.db
